@@ -1,12 +1,19 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Counter } from './components/Counter';
 import './index.scss'
+import { AboutPage } from './pages/AboutPage/AboutPage';
+import { MainPage } from './pages/MainPAge/MainPage';
 
 const App = () => { 
     return ( 
-        <div className="app"> 
-            SALAM ALEYKUM
-            <Counter/>
+        <div className="app">
+            <Link to={'/'}>Main</Link>
+            <Link to={'/about'}>About</Link>
+            <Routes>
+                <Route path={'/about'} element={<AboutPage/>}/>
+                <Route path={'/'} element={<MainPage/>}/>
+            </Routes> 
         </div>
     )
 }
