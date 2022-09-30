@@ -31,7 +31,7 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
       use: 'ts-loader', // Свойство use указывает, какой загрузчик должен использоваться для выполнения трансформации.
       exclude: /node_modules/, // Исключаем проверку нод модулей
   }
-  return [ 
+  return [ //
       typescriptLoader,
       cssLoader
     ]
