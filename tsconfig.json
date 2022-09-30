@@ -5,11 +5,12 @@
     // Однако это не означает, что теперь вовсе нельзя использовать any.
     // Это означает лишь, что в подобных ситуация разработчик должен явно писать any,
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "ESNext",
     // В какую спецификацию компилируем: для поддержки большинства браузеров
     "target": "es5",
     "jsx": "react-jsx",
     // Компилятор будет обрабатывать не только TS файлы, но и JS файлы
+    "removeComments": true, 
     "allowJs": true,
     "moduleResolution": "node",
     // esModuleInterop позволяет работать с пакетами, которые используют
@@ -27,7 +28,10 @@
     // можно писать такой
     // import React from 'react';
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    // Параметры ниже отвечают за отлов ошибок в ф-иях (Подробнее при наведении на них).
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
   },
   "ts-node": {
     "compilerOptions": {
