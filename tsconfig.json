@@ -29,6 +29,9 @@
     // import React from 'react';
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    }
     // Параметры ниже отвечают за отлов ошибок в ф-иях (Подробнее при наведении на них).
     // "noUnusedLocals": true,
     // "noUnusedParameters": true,
