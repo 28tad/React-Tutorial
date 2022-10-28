@@ -10,13 +10,13 @@ const ThemeProvider: FC = ({children}) => {
         theme: theme, // передаем тему
         setTheme: setTheme, // функция которая эту тему будет изменять
 
-    }), [theme]) // реагируем на изменения theme 
+    }), [theme]) // реагируем на изменения theme
 
   return (
     <ThemeContext.Provider value={defaultProps}>
         {children}
     </ThemeContext.Provider>
   )
-}
+};
 
-export default ThemeProvider
+export default ThemeProvider;
